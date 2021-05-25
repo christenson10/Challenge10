@@ -20,7 +20,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'employeeID',
+        name: 'employeeId',
         message: 'What is your Manager\'s employee ID?',
         validate: idInput => {
             if (idInput) {
@@ -63,7 +63,7 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then(function (answers) {
-        const htmlAnswers = generateHTML(answers)
+        const htmlAnswers = generateHtml(answers)
         console.log(htmlAnswers)
         fs.writeFileSync('index.html', htmlAnswers, function(err) {
             return console.log(err);
@@ -72,3 +72,9 @@ function init() {
 }
 
 init();
+
+// function generateHtml(data) {
+//     console.log(data)
+// };
+  
+// module.exports = generateHtml;
