@@ -1,7 +1,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
 const path = require('path')
-const generateHtml = require('./dist/generateHTML')
+const generateHtml = require('./lib/generateHtml')
 
 //Array for input
 const questions = [
