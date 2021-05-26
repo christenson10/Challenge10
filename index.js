@@ -3,6 +3,11 @@ const inquirer = require('inquirer')
 const path = require('path')
 const generateHtml = require('./lib/generateHtml')
 
+//
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+
 //Array for input
 const questions = [
     {
@@ -65,16 +70,10 @@ function init() {
     .then(function (answers) {
         const htmlAnswers = generateHtml(answers)
         console.log(htmlAnswers)
-        fs.writeFileSync('index.html', htmlAnswers, function(err) {
+        fs.writeFileSync('./dist/index.html', generateHtml(), function(err) {
             return console.log(err);
           });
     })
 }
 
 init();
-
-// function generateHtml(data) {
-//     console.log(data)
-// };
-  
-// module.exports = generateHtml;
