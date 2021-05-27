@@ -3,12 +3,13 @@ const inquirer = require('inquirer')
 const path = require('path')
 const generateHtml = require('./lib/generateHtml')
 
-//
-const Manager = require('./lib/Manager');
+
+const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 
 //Array for input
+
 const questions = [
     {
         type: 'input',
@@ -70,7 +71,7 @@ function init() {
     .then(function (answers) {
         const htmlAnswers = generateHtml(answers)
         console.log(htmlAnswers)
-        fs.writeFileSync('./dist/index.html', generateHtml(), function(err) {
+        fs.writeFileSync('./dist/index.html', htmlAnswers, function(err) {
             return console.log(err);
           });
     })
