@@ -65,6 +65,124 @@ const questions = [
     },
 ];
 
+// // If employee is intern - prompt questions
+
+// Needs function to go through questions and collect data from input to put in array
+
+// const questions = [
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the intern\'s name?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your intern\'s name!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the intern\'s ID?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your intern\'s ID!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the intern\'s email?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your intern\'s email!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the intern\'s school name?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your intern\'s school name!')
+//                 return false
+//             }
+//         }
+//     },
+// ];
+
+// // If employee is engineer - prompt questions
+
+// const questions = [
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the engineer\'s name?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your engineer\'s name!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the engineer\'s ID?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your engineer\'s ID!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the engineer\'s email?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your engineer\'s email!')
+//                 return false
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         name: 'name',
+//         message: 'What is the engineer\'s GitHub username?',
+//         validate: nameInput => {
+//             if (nameInput) {
+//                 return true
+//             } else {
+//                 console.log('Please enter your engineer\'s GitHub username!')
+//                 return false
+//             }
+//         }
+//     },
+// ];
+
+// Loop through array to create small cards
+
 // Function to write HTML file and initialize app
 function init() {
     inquirer.prompt(questions)
