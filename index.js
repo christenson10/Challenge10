@@ -65,7 +65,7 @@ const questions = [
     },
 ];
 
-// // If employee is intern - prompt questions
+// Prompt additional team members. "If intern, addIntern"
 
 // Needs function to go through questions and collect data from input to put in array
 
@@ -125,6 +125,8 @@ const questions = [
 // ];
 
 // // If employee is engineer - prompt questions
+
+// function promptEngineer() {
 
 // const questions = [
 //     {
