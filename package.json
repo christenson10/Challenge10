@@ -21,6 +21,8 @@
   "dependencies": {
     "inquirer": "^8.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.3"
+  },
   "description": "To quickly create a Team Profile from the command line using Node and Inquirer and OOD concepts."
 }

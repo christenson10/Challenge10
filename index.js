@@ -20,8 +20,8 @@ const Intern = require('./lib/Intern')
 //     ])
 // }
 
-function questions() {
-    inquirer.prompt([
+const questions = [
+    // inquirer.prompt([
     {
         type: 'input',
         name: 'name',
@@ -74,18 +74,17 @@ function questions() {
             }
         }
     }
-])
-    .then((employeeInfo) => {
-        const addManager = new Manager(
-            employeeInfo.name,
-            employeeInfo.id,
-            employeeInfo.email,
-            employeeInfo.officeNumber
-        );
-        teamMembers.push(addManager);
-        addEmployee();
-    });
-};
+];
+    // .then((employeeInfo) => {
+    //     const addManager = new Manager(
+    //         employeeInfo.name,
+    //         employeeInfo.id,
+    //         employeeInfo.email,
+    //         employeeInfo.officeNumber
+    //     );
+    //     teamMembers.push(addManager);
+    //     addEmployee();
+    // });
 
 // Prompt additional team members. "If intern, addIntern"
 

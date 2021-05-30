@@ -18,17 +18,26 @@ To quickly create a Team Profile from the command line using Node and Inquirer a
 * SO THAT I have quick access to their emails and GitHub profiles
 
 ## Testing
-* 
+* The Jest package was used for JavaScript testing.
 
 ## Video Link
-https://drive.google.com/file/d/1kEQXm3tJqW2iNUYJzsDm78CMiAphOUI1/view
+https://drive.google.com/file/d/13KRGKweQjoUwuZ9AIWDQ08ezbch6fRVR/view
 ## Github Link
 https://christenson10.github.io/challenge10/
 
 ## Pictures
 
 ## README Preview 1
+Command line question and creation of HTML file
+
 ![Screenshot1](TeamProfileGeneratorScreenshot1.jpg)
 
 ## README Preview 2
+HTML file
+
 ![Screenshot2](TeamProfileGeneratorScreenshot2.jpg)
+
+## README Preview 3
+Engineer Test Example
+
+![Screenshot2](TeamProfileGeneratorScreenshot3.jpg)
