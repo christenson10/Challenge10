@@ -10,17 +10,17 @@ const Intern = require('./lib/Intern')
 
 //Array for input
 
-const teamMembers [];
+// const teamMembers [];
 
-const initializeQuestions () => {
-    inquirer.prompt([
-        {
-            
-        }
-    ])
-}
+// const initializeQuestions () => {
+//     inquirer.prompt([
+//         {
 
-function createManager() {
+//         }
+//     ])
+// }
+
+function questions() {
     inquirer.prompt([
     {
         type: 'input',
@@ -219,4 +219,4 @@ function init() {
     })
 }
 
-initializeQuestions();
+init();
