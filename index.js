@@ -3,14 +3,25 @@ const inquirer = require('inquirer')
 const path = require('path')
 const generateHtml = require('./lib/generateHtml')
 
-
+const Employee = require('./lib/Employee')
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 
 //Array for input
 
-const questions = [
+const teamMembers [];
+
+const initializeQuestions () => {
+    inquirer.prompt([
+        {
+            
+        }
+    ])
+}
+
+function createManager() {
+    inquirer.prompt([
     {
         type: 'input',
         name: 'name',
@@ -52,18 +63,29 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'officenumber',
+        name: 'officeNumber',
         message: 'What is your Manager\'s office number?',
-        validate: officenumberInput => {
-            if (officenumberInput) {
+        validate: officeNumber => {
+            if (officeNumber) {
                 return true
             } else {
                 console.log('Please enter your office number!')
                 return false
             }
         }
-    },
-];
+    }
+])
+    .then((employeeInfo) => {
+        const addManager = new Manager(
+            employeeInfo.name,
+            employeeInfo.id,
+            employeeInfo.email,
+            employeeInfo.officeNumber
+        );
+        teamMembers.push(addManager);
+        addEmployee();
+    });
+};
 
 // Prompt additional team members. "If intern, addIntern"
 
@@ -197,4 +219,4 @@ function init() {
     })
 }
 
-init();
+initializeQuestions();
